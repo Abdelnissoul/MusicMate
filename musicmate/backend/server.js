@@ -14,7 +14,7 @@ const app = express();
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// Define routes
+// Defining routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/playlists', require('./routes/playlistRoutes'));
 app.use('/api/recommendations', require('./routes/recommendationRoutes'));
